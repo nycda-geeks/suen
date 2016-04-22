@@ -1,0 +1,244 @@
+<h1>Practice day 2</h1>
+
+<script>
+// DAY TWO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+// for(var i = 0; i < 100; i++) {
+// 	if(i % 3 == 0){
+// 	console.log(i)
+// 	}
+// }
+
+// notice the double IF statement!!!
+// var counter = 1
+
+// 	while (counter < 100) {
+// 	// if (counter % 3 == 0) {
+// 		if ( !(counter % 3) ) {
+// 			console.log(counter)
+// 		}
+// 		counter++
+// 	}
+
+// ---------
+
+
+function red() {
+	console.log("red")
+}
+
+function blue() {
+	console.log("blue")
+}
+
+blue()
+red()
+console.log("green")
+blue()
+
+// ------------------
+
+function swordfish(tourmaline, hematite, methril) {
+	console.log(tourmaline + hematite + methril)
+}
+swordfish(1, 2, 3)
+swordfish(4, 5, 6)
+
+
+// 
+
+function ajax(kampioen, winnaar, voetbal) {
+	console.log(kampioen + winnaar + voetbal)
+}
+ajax(1, 4, 55)
+
+
+// ----
+
+
+function welcome(sven) {
+	console.log("hi " + sven)
+}
+
+welcome("gijs")
+
+// ----
+
+function tafel (chair) {
+	return ((chair * 25) * 2) < 100
+}
+
+var sheet = 0
+while (tafel(sheet)) {
+	console.log("onze sheet is " + sheet)
+	
+	sheet++
+}
+
+// --- 
+
+var artemis = {
+	numberOflegs: 2,
+	symbol: "bow",
+	occupation: "hunting",
+}
+
+console.log(artemis.symbol, artemis.occupation)
+
+artemis.symbol = "fiets"
+
+console.log(artemis.symbol)
+
+//  --
+
+var egg = {
+	calories: 80
+}
+var apple = {
+	calories: 20
+}
+var orangeJuice = {
+	calories: 40
+}
+
+var breakfast = [egg, apple, orangeJuice]
+
+
+// function howMuch
+
+
+// practice
+
+// 1: Create a function that takes in one parameter and returns the square of that parameter.
+// Remember to test your function by calling it.
+
+function square(number) {
+	return number * number
+}
+
+console.log(square(5))
+
+// 2: Create a function that takes two parameters and returns whichever one is smaller.
+
+function para(pa, ra) {
+	if (pa < ra ) {
+		console.log("RA WINS")
+	} else if ( pa > ra ) {
+		console.log("PA WINS")
+	} else {
+		console.log("it's a TIE")
+	}
+}
+para(3,5)
+
+// 3: Create a function that takes two parameters and returns whichever one is closer to 0.
+
+function closerToZero(one, two) {
+	if ( Math.abs(one) < Math.abs(two) ) {
+		console.log("one is smaller") 
+	} else if ( Math.abs(one) > Math.abs(two) ) {
+		console.log("two is smaller")
+	} else {
+		console.log("it's a TIE!")
+	}
+}
+closerToZero(58, -38)
+
+// 4: Create a function that takes in an array as a parameter, and finds the maximum value within that array.
+
+
+function Arrayfy(this_is_array) {
+	var higher = 0
+	
+	for (var i = 0; i < this_is_array.length; i++) {
+		if (higher < this_is_array[i]) {
+			higher = this_is_array[i]
+		}
+	}
+console.log(higher)
+}
+
+Arrayfy([267, 306, 8888, 99, 87797, 9328758923653])
+
+// 5: Create an object named artemis
+// Give this object the following key/value pairs: numberOfLegs: 2, symbol: bow, and occupation: hunting
+
+var artemis = {
+	numberOflegs: 2,
+	symbol: "bow",
+	occupation: "hunting"
+}
+console.log(artemis.symbol)
+
+// 6: make a ractangle with width of 30 and hight of 50
+
+var bestRactangle = {
+	width: 30,
+	hight: 50
+}
+
+function racArea(rac_with_stats) {
+	return rac_with_stats.width * rac_with_stats.hight
+}
+
+var findArea = racArea(bestRactangle) 
+	console.log(findArea)
+
+
+// 7: Write a function that takes in two arrays of the same length. Have the function return an object whose keys are the first array and whose values are the second array.
+
+// try 1
+// var array1 = ["a", "b", "c"];
+// var array2 = ["porcelain", "steel", "tar"];
+
+// function double(array1, array2) {
+// 	var object = {
+// 		array1 = object.keys
+// 		array2 = object.values
+// 	}
+// console.log(object.array1)
+// }
+
+// double(["age", "name"][25, "Sven"])
+
+// --- correct!!!! 
+
+var array1 = ["a", "b", "c"]
+var array2 = [1, 2, 3]
+
+function newObject(key, value) {
+	newObject = {}
+	for (var i = 0; i < value.length; i++) {
+		newObject[key[i]] = value[i]
+	}
+console.log(newObject)
+}
+
+newObject(array1, array2)
+
+// own version
+
+var list_a = ["name", "age", "adress"]
+var list_b = ["Sven", 25, "Hoofdweg 101C"]
+
+function persona(lijst1, lijst2) {
+	persona = {}
+	for (var i = 0; i < lijst1.length; i++) {
+		persona[lijst1[i]] = lijst2[i]
+	}
+console.log(persona)
+}
+
+persona(list_a, list_b)
+
+
+
+// 
+
+
+
+
+
+
+</script>

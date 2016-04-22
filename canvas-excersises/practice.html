@@ -1,0 +1,115 @@
+<h1>JavaScript Practice Exercises</h1>
+
+For the following questions, make sure to include at least two tests for each function. For now, that means calling your function with some values and printing out the answer. If you want to make Lloyd's life easier, print out the expected value as well.
+</br>
+----------------------</br>
+
+Write a function that returns the area of a circle, given the radius.
+Hints: The area of a circle is "π r 2". For π, use Math.PI.
+</br>
+----------------------</br>
+
+Given a string, create a function that returns the last character in that string.
+example:
+"cattywampus" --> "s"
+</br>
+----------------------</br>
+
+Write a function that takes in one parameter "length" and prints out that many stars.
+example:
+3 --> ***
+5 --> *****
+</br>
+----------------------</br>
+
+Now, write a function that takes in one parameter "length" and prints out a square of stars.
+examples:
+
+
+<script>
+
+// print the area of a circle
+
+function circle(radius) {
+	return Math.PI * radius * radius
+}
+
+console.log(circle(5))
+
+// print the last letter of a string
+
+function lastLetter(string) {
+
+	console.log(string.slice(-1))
+
+}
+
+lastLetter("blaaadieblaaaf")
+
+
+// print string of stars
+
+function printStar(length) {
+
+	var store = ""
+	
+	for (var i = 0; i < length; i++) {
+		store += "*"
+	}
+	console.log(store)
+}
+
+printStar(3)
+printStar(5)
+
+// Now, write a function that takes in one parameter "length" and prints out a square of stars. examples:
+
+function printSquareStar(length) {
+
+	var store = ""
+	
+	for (var i = 0; i < length; i++) {
+		store += "*"
+	}
+
+	var addStore = ""
+
+	for (var i = 0; i < length; i++) {
+		addStore += store + "\n"
+	}
+console.log(addStore)
+}
+
+printSquareStar(3)
+printSquareStar(5)
+
+// Given an array of integers, write a function that finds the average and returns it.
+
+// examples:
+// [1,2,3] --> 2
+// [1,2,4] --> 2.3333
+
+
+function average(array) {
+	for (var i = 0; i < array.length; i++) {
+		array[i]
+	}
+}
+
+average([5,7,19,12])
+
+
+
+// -------------
+
+OPTIONAL CHALLENGE
+
+Write a function that takes in two arrays of integers and returns the largest common integer. If there are no common integers, return 'undefined'.
+
+example:
+[5, 10, 2], [3, 5, 7] returns 5
+[8, 7, 6], [1, 2, 8, 200] returns 8
+
+
+
+</script>

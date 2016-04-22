@@ -1,0 +1,46 @@
+<h1>compound interest</h1>
+
+# Do the following
+​
+- Make two objects. Properties: name, bankBalance, monthlySavings, interestRate, yearsSaving
+- Make a function that takes an object as a parameter
+- Make this function calculate compound interest based on bankBalance, monthlySavings, interestRate, yearsSaving
+- Make the function console.log "Client <name> saved <amount> after <years>"
+
+
+<script>
+
+
+
+var brother1 = {
+	name: "Sven",
+	monthlySavings: 550,
+	interestRate: 1.1,
+	yearsSaving: 15,
+	bankBalance: 100000
+}
+
+var brother2 = {
+	name: "Piet",
+	monthlySavings: 1000,
+	interestRate: 1.01,
+	yearsSaving: 20,
+	bankBalance: 2000
+}
+
+function bank(people) {
+
+	for(var i = 0; i < people.yearsSaving; i++ ) {
+		
+	people.bankBalance += (people.monthlySavings * 12)
+	people.bankBalance *= people.interestRate
+
+	}
+
+
+	console.log("name: " + people.name + ", years of savings: " + people.yearsSaving + ", total savings: " + Math.round(currentBalance))
+}
+
+bank(brother1)
+
+</script>

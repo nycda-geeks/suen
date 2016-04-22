@@ -1,0 +1,63 @@
+
+<h1>Excersise Anonymous</h1>
+<p>Part 1</br>
+- Create a function "findSum" that takes in two parameters and returns the sum of those parameters.</br>
+- Create a function "findProduct" that takes in two parameters and returns the product of those parameters.</p>
+
+<p>Part 2 </br>
+- Create a function "threeOperation" that takes in two parameters, named "x" and "operation". The first parameter is a number. The second parameter is a function.</br>
+- "threeOperation" should call the "operation" parameter as a function. It should pass the number 3 along with the "x" parameter to that function.</p>
+
+<p>Part 3 </br>
+- Call "threeOperation" with the values of "4" and "findSum". Check that your answer is "7".</br>
+- Call "threeOperation" with the values of "5" and "findSum". Check that your answer is "8".</br>
+- Call "threeOperation" with the values of "4" and "findProduct". Check that your answer is "12".</br>
+- Call "threeOperation" with the values of "5" and "findProduct". Check that your answer is "15".</p>
+</br>
+</br>
+<h2>RESULTS:</h2>
+
+
+<script>
+function findSum(a, b) {
+	return a + b
+}
+
+function findProduct(a, b) {
+	return a * b
+}
+
+function threeOperation(x, operation) {
+	var z = operation(x, 3) 
+	return z
+}
+
+console.log(threeOperation(4, findSum))
+
+</script>
+
+
+<script>
+
+// part 1
+// sum	
+	var findSum = function(sum1,sum2) {
+		return sum1 + sum2
+	}
+// product
+	var findProduct = function(prod1,prod2) {
+		return prod1 * prod2
+	}	
+
+// part 2
+	function threeOperation(x, operation) {
+		return operation(x,3)
+	}
+
+// part 3 prints function in the html file
+document.write("<br>" + threeOperation(4, findSum), "<br>" + threeOperation(5, findSum), "<br>" + threeOperation(4, findProduct), "<br>" + threeOperation(5, findProduct))
+
+</script>
+
+
+

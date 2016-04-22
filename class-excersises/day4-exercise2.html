@@ -1,0 +1,62 @@
+<p># Exercise 2</br>
+
+- Create a function named `bloopAppender` that takes in one parameter, `word`, and returns `word` appended with `"bloop"`.</br>
+- Create a function named `doubler` that takes in one parameter, `word` and returns that word doubled.</br>
+</br>
+---</br>
+
+- Create a function `changeString` that takes in three parameters: `word`, `firstOperation`, and `secondOperation`.</br>
+- `changeString` should call `firstOperation` with `word` passed in as a parameter.</br>
+- Call `secondOperation` with the result of `firstOperation` passed in as a parameter.</br>
+- Finally, print out the result of `secondOperation`.</br>
+</br>
+---</br>
+
+- Call `changeString` with the parameters: `"I'm a fish!"`, `bloopAppender`, and `doubler`.</br>
+- Check that it prints out: `"I'm a fish!bloopI'm a fish!bloop"`</br>
+
+- Call `changeString` with the parameters: `"I'm a fish"`, `doubler`, and `bloopAppender`.</br>
+- Check that it prints out: `"I'm a fish!I'm a fish!bloop"`</br>
+</br>
+---</br>
+
+- Call `changeString` with the parameters: `"I like bloops! "`, `bloopAppender`, and `bloopAppender`. </br>
+- Check that it prints out: `"I like bloops! bloopbloop"`</br>
+
+- Call `changeString` with the parameters: `"wurzle_flurble_"`, `doubler`, and `doubler`.</br>
+- Check that it prints out: `"wurzle_flurble_wurzle_flurble_wurzle_flurble_wurzle_flurble_"`</br>
+</br>
+---</br>
+
+# What is this for?</br>
+</br></p>
+
+<script>
+	var bloopAppender = function(word) {
+		return word + "bloop"
+	}
+
+		console.log(bloopAppender("fred"))
+
+	var doubler = function(word) {
+		return word + " " + word
+	}
+
+		console.log(doubler("pietje"))
+
+	var changeString = function(word, firstOperation, secondOperation) {
+		
+		var a = firstOperation(word)
+
+  		console.log(secondOperation(a))
+	}
+
+changeString("I'm a fish! ", bloopAppender, doubler)
+
+changeString("I'm a fish! ", doubler, bloopAppender)
+
+changeString("I like boobs!", bloopAppender, bloopAppender)
+
+changeString("wurzle_flurble", doubler, doubler)
+
+</script>
