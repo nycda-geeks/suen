@@ -83,33 +83,70 @@ console.log(addStore)
 printSquareStar(3)
 printSquareStar(5)
 
+
+// ----------------------------------------
 // Given an array of integers, write a function that finds the average and returns it.
 
 // examples:
 // [1,2,3] --> 2
 // [1,2,4] --> 2.3333
 
+var searchArray = [5,7,19,12]
+
+var dd = [2, 4, 5]
 
 function average(array) {
+	
+	var store = 0
+
 	for (var i = 0; i < array.length; i++) {
-		array[i]
+		store += array[i] 
 	}
+	var average = store / array.length
+
+	console.log(average)
 }
 
-average([5,7,19,12])
 
+average(searchArray)
+average()
 
 
 // -------------
 
-OPTIONAL CHALLENGE
+// OPTIONAL CHALLENGE
 
-Write a function that takes in two arrays of integers and returns the largest common integer. If there are no common integers, return 'undefined'.
+// Write a function that takes in two arrays of integers and returns the largest common integer. If there are no common integers, return 'undefined'.
 
-example:
-[5, 10, 2], [3, 5, 7] returns 5
-[8, 7, 6], [1, 2, 8, 200] returns 8
+// example:
+// [5, 10, 2], [3, 5, 7] returns 5
+// [8, 7, 6], [1, 2, 8, 200] returns 8
 
+var needCommonInteger = [[5,2,8,0],[28,5,1,4]]
+
+function giveCommonInteger(array) {
+	
+	var storeArrayIndex = ""
+
+	for (var i = 0; i < array.length; i++) {
+		
+		storeArrayIndex = array[i] 
+		
+		for (var j = 0; j < array[i].length; i++) {
+			Things[i]
+		}
+		array[i]
+
+			if (array[i] = array[j]) {
+				return store
+			}
+			else {
+				return "undefined"
+			}
+	}
+} 
+
+giveCommonInteger(needCommonInteger)
 
 
 </script>
