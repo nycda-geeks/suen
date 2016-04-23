@@ -1,0 +1,44 @@
+<h1>How fast do you need to ride on your bike?</h1>
+
+
+<script>
+
+
+
+// question for time
+var vraagTime = prompt("How many minutes do you have left? ")
+document.write("</br>" + "You have " + vraagTime + " minutes left")
+
+// question for distance in km
+var vraagDistance = prompt("How many km do you need to ride?")
+document.write("</br>" + "You have " + vraagDistance + " kilometers to ride")
+
+
+var driver = {
+	minutes: vraagTime,
+	km: vraagDistance 
+}
+
+
+function speed(person) {
+	
+	person.minutes /= 60;
+
+	var racen = person.km / person.minutes;
+
+	// document.write("</br>" + "you need to ride " + racen + "km/h")
+	 
+	 if (racen < 10) {
+	 	document.write("</br>" + "you need to ride " + racen + "km/h" + "</br>" + "take it slow")
+	 }
+	 else if (racen < 15) {
+	 	document.write("</br>" + "you need to ride " + racen + "km/h" + "</br>" + "Hurry up a bit!")
+	 }
+	 else {
+	 	document.write("</br>" + "you need to ride " + racen + "km/h" + "</br>" + "You're fucking late bro")
+	 }
+}
+
+speed(driver)
+
+</script>
