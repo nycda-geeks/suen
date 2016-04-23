@@ -1,52 +1,56 @@
 <h1>JavaScript Practice Exercises</h1>
 
-For the following questions, make sure to include at least two tests for each function. For now, that means calling your function with some values and printing out the answer. If you want to make Lloyd's life easier, print out the expected value as well.
-</br>
-----------------------</br>
 
-Write a function that returns the area of a circle, given the radius.
-Hints: The area of a circle is "π r 2". For π, use Math.PI.
-</br>
-----------------------</br>
-
-Given a string, create a function that returns the last character in that string.
-example:
-"cattywampus" --> "s"
-</br>
-----------------------</br>
-
-Write a function that takes in one parameter "length" and prints out that many stars.
-example:
-3 --> ***
-5 --> *****
-</br>
-----------------------</br>
-
-Now, write a function that takes in one parameter "length" and prints out a square of stars.
-examples:
-
+<h2>1: Print area of circle</h2>
+<p>Write a function that returns the area of a circle, given the radius. </br></p>
 
 <script>
 
 // print the area of a circle
 
 function circle(radius) {
-	return Math.PI * radius * radius
+	var area = Math.PI * radius * radius
+
+	document.write("The area of a circle with a radius of " + radius + " cm is: " + area + " cm"+ "</br>")
+
 }
 
-console.log(circle(5))
+circle(5)
+circle(32)
+circle(68)
+
+</script>
+
+
+<h2>2: Print last character of string</h2>
+<p> Given a string, create a function that returns the last character in that string. </br>
+example: "cattywampus" --> "s"</br>
+</p>
+
+<script>
 
 // print the last letter of a string
 
 function lastLetter(string) {
 
-	console.log(string.slice(-1))
+	document.write("The last letter of the string: " + string + " is: " + string.slice(-1) + "</br>") 
 
 }
 
-lastLetter("blaaadieblaaaf")
+lastLetter("cattywampus")
+lastLetter("Super power")
+
+</script>
 
 
+<h2>3: Show me some stars</h2>
+<p>Write a function that takes in one parameter "length" and prints out that many stars.</br>
+	example:</br>
+	3 --> ***</br>
+	5 --> *****</br>
+</p>
+
+<script>
 // print string of stars
 
 function printStar(length) {
@@ -56,11 +60,19 @@ function printStar(length) {
 	for (var i = 0; i < length; i++) {
 		store += "*"
 	}
-	console.log(store)
+	document.write("You say you want this amount of starts: " + length + "</br>" + store + "</br>")
 }
 
 printStar(3)
 printStar(5)
+
+</script>
+
+<h2>4: I really need more stars bro. Squares of stars this time</h2>
+
+<p>Now, write a function that takes in one parameter "length" and prints out a square of stars.</p>
+
+<script>
 
 // Now, write a function that takes in one parameter "length" and prints out a square of stars. examples:
 
@@ -76,24 +88,27 @@ function printSquareStar(length) {
 
 	for (var i = 0; i < length; i++) {
 		addStore += store + "\n"
+		
 	}
-console.log(addStore)
+	document.write(addStore + "</br>")
 }
 
 printSquareStar(3)
 printSquareStar(5)
+</script>
 
 
-// ----------------------------------------
-// Given an array of integers, write a function that finds the average and returns it.
+<h2>5: Print average of integers</h2>
+<p>Given an array of integers, write a function that finds the average and returns it. </br>
+examples:</br>
+[1,2,3] --> 2</br>
+[1,2,4] --> 2.3333
+</p>
 
-// examples:
-// [1,2,3] --> 2
-// [1,2,4] --> 2.3333
-
+<script>
 var searchArray = [5,7,19,12]
 
-var dd = [2, 4, 5]
+var needAverageFromThis = [2, 4, 5]
 
 function average(array) {
 	
@@ -104,49 +119,47 @@ function average(array) {
 	}
 	var average = store / array.length
 
-	console.log(average)
+	document.write("The average number of this array [" + array + "] is: " + average + "</br>")
 }
 
 
 average(searchArray)
-average()
+average(needAverageFromThis)
+</script>
 
 
-// -------------
+<h2>6: OPTIONAL CHALLENGE </h2>
+<p>Write a function that takes in two arrays of integers and returns the largest common integer. If there are no common integers, return 'undefined'.
+</br>
+example:</br>
+[5, 10, 2], [3, 5, 7] returns 5</br>
+[8, 7, 6], [1, 2, 8, 200] returns 8</p>
 
-// OPTIONAL CHALLENGE
 
-// Write a function that takes in two arrays of integers and returns the largest common integer. If there are no common integers, return 'undefined'.
+<script>
 
-// example:
-// [5, 10, 2], [3, 5, 7] returns 5
-// [8, 7, 6], [1, 2, 8, 200] returns 8
-
-var needCommonInteger = [[5,2,8,0],[28,5,1,4]]
-
+var needCommonInteger = [[5,2,8,0],[28,1,4, 5]]
+var searchMyMate = [[55, 66, 88, 99], [1, 3, 6, 77, 66]]
 function giveCommonInteger(array) {
 	
-	var storeArrayIndex = ""
+	var storeArrayIndex1 = 0
+	var storeArrayIndex2 = 0
 
 	for (var i = 0; i < array.length; i++) {
 		
-		storeArrayIndex = array[i] 
-		
 		for (var j = 0; j < array[i].length; i++) {
-			Things[i]
+					
 		}
-		array[i]
-
-			if (array[i] = array[j]) {
-				return store
-			}
-			else {
-				return "undefined"
-			}
+		storeArrayIndex1 = array[i] 
+		if (storeArrayIndex1 = array[j]) {
+			return store
+		}	else {
+			return "undefined"
+		}
 	}
 } 
 
-giveCommonInteger(needCommonInteger)
+console.log(giveCommonInteger(needCommonInteger))
 
 
 </script>
