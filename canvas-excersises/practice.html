@@ -138,28 +138,95 @@ example:</br>
 
 <script>
 
-var needCommonInteger = [[5,2,8,0],[28,1,4, 5]]
-var searchMyMate = [[55, 66, 88, 99], [1, 3, 6, 77, 66]]
-function giveCommonInteger(array) {
-	
-	var storeArrayIndex1 = 0
-	var storeArrayIndex2 = 0
 
-	for (var i = 0; i < array.length; i++) {
+
+
+function highestCommonInteger(array, array) {
+	var store = []
+	for (var i = 0; i < array[1].length; i++) {
+		array[1][i]
+
+		if (true) {}
+	}
+}
+
+
+
+
+
+var needCommonInteger = [[5,2,8,1],[28,1,4, 5]]
+
+var searchMyMate = [[55, 66, 88, 99], [1, 3, 6, 77, 66]]
+
+function giveCommonInteger (array) {
+	
+		var storeArrayInd0 = 0
+	
+		var storeArrayInd1 = 0
+
+	for (var i = 0; i < array[0].length; i++) {
+		storeArrayInd0 = array[i]
+		console.log(storeArrayInd0)
 		
-		for (var j = 0; j < array[i].length; i++) {
-					
+		for (var j = 0; j < array[1].length; i++) {
+			storeArrayInd1 = array[1[j]
+			console.log(array)
 		}
-		storeArrayIndex1 = array[i] 
-		if (storeArrayIndex1 = array[j]) {
-			return store
-		}	else {
-			return "undefined"
+		if (storeArrayInd0 == storeArrayInd1) {
+			
+			console.log  ("storeArrayInd0")
+		} else {
+			console.log ("undefined yooo")
 		}
 	}
-} 
+}
 
 console.log(giveCommonInteger(needCommonInteger))
+
+
+
+function intersect(a, b) {
+    var d = {};
+    var results = [];
+    for (var i = 0; i < b.length; i++) {
+        d[b[i]] = true;
+    }
+    for (var j = 0; j < a.length; j++) {
+        if (d[a[j]]) 
+            results.push(a[j]);
+    }
+    return results;
+}
+
+console.log(intersect([[55, 66, 88, 99], [1, 3, 6, 77, 66]])
+
+// my code
+// 	for (var i = 0; i < array[0].length; i++) {
+		
+// 		storeArrayIndex1 = array[0].length[i]
+
+// 		console.log(array[0])
+		
+// 		for (var j = 0; j < array[i].length; i++) {
+		
+// 			storeArrayIndex2 = array[i][j]
+			
+// 			console.log(storeArrayIndex2)
+					
+// 			if (storeArrayIndex1 == storeArrayIndex2) {
+// 				return "you did it!"
+
+// 			}	else {
+// 				return "yo-undefined"
+// 			}
+// 		}
+// 	}
+// } 
+
+// console.log(giveCommonInteger(searchMyMate))
+
+// console.log(giveCommonInteger(needCommonInteger))
+
 
 
 </script>

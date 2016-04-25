@@ -1,0 +1,16 @@
+.header{
+	text-align:center;
+	background:url(../img/back-ground.jpeg) center repeat;
+	padding:140px 0;
+}
+
+.header h1 {
+	font-family: 'Megrim', cursive;
+	text-shadow: 2px 2px #000;
+}
+
+.we-create li {
+	color: black;
+	text-shadow: 1px 1px #fff;
+	font-size: 2em;
+}
