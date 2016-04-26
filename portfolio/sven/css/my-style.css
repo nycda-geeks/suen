@@ -1,3 +1,7 @@
+.body {
+	background-color: black;
+	color: green;
+}
 .header{
 	text-align:center;
 	background:url(../img/back-ground.jpeg) center repeat;
@@ -14,3 +18,11 @@
 	text-shadow: 1px 1px #fff;
 	font-size: 1.5em;
 }
+
+.github a:hover {
+	background-color: #ffc31e;
+}
+
+/*.main-nav {
+	text-align: center;
+}*/
