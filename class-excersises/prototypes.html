@@ -1,0 +1,34 @@
+Prototype lessen
+
+<script>
+
+	function Rectangle (x, y, width, height){
+		this.pointx = x;
+		this.pointy = y;
+		this.width = width;
+		this.height = height;
+	}
+
+	Rectangle.prototype.area = function() {
+		return this.height * this.width
+	}
+
+
+	var niceRectangle = new Rectangle(7, 7, 10, 12)
+// when calling a function. Don't forget 
+	console.log(niceRectangle.area())
+
+
+// Modify the 'rectangle' class's prototype to contain a "containsPoint" function, which detects whether a point is within the rectangle
+
+
+
+Rectangle.prototype.containsPoint = function ( pointX, pointY ) {
+	if (pointX < X | ) {
+		console.log("klaar")
+	}
+}
+
+
+</script>
+
