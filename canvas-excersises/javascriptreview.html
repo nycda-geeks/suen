@@ -1,0 +1,157 @@
+// write a function that takes in three parameters and returns the sum of those three parameters
+</br>
+function returnSum( x, y, z ) {
+	return x + y + z
+}
+</br>
+// given a string, create a function that returns the last character in that string.
+// examples:
+// "cattywampus" --> s
+</br>
+
+
+<script>
+	// write a function that takes in three parameters and returns the sum of those three parameters
+
+function returnSum( x, y, z ) {
+	return x + y + z
+}
+returnSum( 5, 6, 7)
+</script>
+
+<script>
+// given a string, create a function that returns the last character in that string.
+// examples:
+// "cattywampus" --> s
+
+var string = "Hello friends"
+var lastLetter = string.charAt(string.length-1)
+console.log(lastLetter) // prints s
+</script>
+
+<script>
+	// write a function that takes in one parameter and returns the cube of that parameter
+// examples:
+// 3 --> 27
+// 4 --> 64
+
+function makeCube ( rib ) {
+	return rib * rib * rib
+}
+
+console.log(makeCube(10))
+
+</script>
+
+<script>
+// define a function that takes in a string and reverses it. 
+// you are not allowed to call the "reverse" function (or any other string functions)
+
+	var boss = "nycda"
+
+function reverse ( string ) {	
+	var store = ""
+
+	for (var i = string.length; i > 0; i--) {
+		store += string.substring(i-1,1)
+	}
+	console.log(store)
+}
+reverse(boss)
+
+</script>
+
+<script>
+var keys = ['bikes', 'cars', 'mobiles']
+var values = [ 5, 10, 6] 
+
+function arraysToObject( array1, array2 ) {
+	var store = {}
+
+	for (var i = 0; i < array1.length; i++) {
+		
+		store[array1[i]] = array2[i]
+	}
+	return store
+}
+console.log( arraysToObject( keys, values ))
+// console.log( arraysToObject( propertyCount ))
+</script>
+
+<script>
+// object
+// // Given an object with keys and values,
+// aray with keys and values
+// //create two arrays: one which contains the object's keys,
+// // and one which contains the object's values. 
+
+// functioni 
+// //Wrap this into a function which takes in one object
+
+// prototype
+// // that contains keys and values, and returns a different object that contains two keys. 
+
+// prototype
+
+//The first key
+// should be named "keys" and will have the first array as a value. 
+
+// The second key should be named
+// "values" and will have the second array as a value.
+
+// examples:
+
+// { exciting: "markets", exotic: "britain" } --> 
+// { keys: ["exciting", "exotic"], values: ["markets", "britain"] }
+
+// // { a: "x", b: "y", c: "z" } --> 
+// { keys: ["a", "b", "c"], values: ["x", "y", "z"] }
+
+
+var user = {
+	'name': 'sven',
+	'age': 25,
+	'eyecolor': 'blue'
+}
+
+// var keys = ['name', 'age', 'eyecolor']
+// var values = ['sven', 25, 'blue']
+
+// function key()
+// 	for each key
+
+valuesToArray = function (obj) {
+	var keys = []
+	var values =[]
+
+	for (var key in obj) {
+		if (obj.hasOwnProperty(key)) {
+			keys.push(key)
+		}
+	}
+	console.log (keys)
+	
+	for (var key in obj) {
+		if (obj.hasOwnProperty(key)) {
+			values.push(obj[key])
+		}
+	}
+	console.log(values)
+
+var newObject = {
+	'keys': keys, 
+	'values': values
+}
+
+return newObject
+}
+
+console.log(valuesToArray( user ))
+	
+</script>
+
+
+<script>
+
+	
+</script>
